@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!--Para que sea compatible-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link del bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet"type="text/css"href="css/styles.css"/>
+    <!--link del javascript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Icon in title bar-->
+    <link rel="icon" href="img/nyancaticon.png" type="image/x-icon">
+    <!--Pop-up-->
+    <script>
+      if (confirm("Are you sure you want to continue? It's somehow boring...")){
+        alert ("Oh, ok... thx!")
+      }
+      else {
+          alert("hah u can't go back")
+      }
+        
+    </script>
+    <title>Nekos</title>
+</head>
+<body>
+  <!--Loader-->
+  <div class="loader hidden">
+    <img src="img/loadingcat.gif" alt="Loading...">
+  </div>
+  <!--<script type="text/javascript">
+    window.addEventListener("load", function() {
+      const loader= document.querySelector(".loader");
+      loader.className +="hidden";
+    });
+  </script>-->
+  <br>
+  <br>
+    <!--Video Cover-->
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="vid/Cat Transcendence- limitless.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">Nekos</h1>
+                    <p class="lead mb-0" style="color:rgb(201, 199, 199);">The webpage you didn't know you needed</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<section class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <p>You may know of the existence of some peculiar cats.<br><br>And there are several kinds.<br><br>Let me introduce them to you...</p>
+        <p class="mb-0">
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--space bg-->
+<button onclick="Space()">Space mode</button>
+
+<script>
+function Space() {
+  var element = document.body;
+  element.classList.toggle("space-mode");
+}
+</script>
+
+<!--black bg-->
+<button onclick="Dark()">Dark mode</button>
+
+<script>
+function Dark() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+</script>
+
+    <!--Barra de navegación:--> <!--Poner en el class: fixed-top-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-dark bg-dark">
+        <a id="nekosmulticolor"class="navbar-brand" href="index.html"><img src="img/christmasneko.png" style="width:60px;height:40px;object-fit: cover;">Nekos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="cats-through-history.html">Cats throughout History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catsinart.html">Cats in Art</a>
+            </li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Cats in TV Shows
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="DBZ.html">DBZ</a>
+                      <a class="dropdown-item" href="TheSimpsons.html">The Simpsons</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="memes.html">Another section: Memes</a>
+                    </div>
+            <li class="nav-item">
+              <a class="nav-link" href="uwu.html">uwu</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="https://www.twitter.com/geodrns/">
+                <img src="img/twitter.png" style="width:25px;height:25px;">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light" href="https://www.instagram.com/geodrns/">
+                <img src="img/instagram.png" style="width:25px;height:28px;">
+              </a>
+            </li>
+          </ul>
+          <span class="navbar-text">@geodrns</span>
+        </div>
+      </nav>
+    <!--Fin navbar-->
+
+    <hr>
+    <br>
+    <br>
+    <div id="content"> <!--Este div no hace nada-->
+      <section>
+        <div class="container">
+            <!-- img izq-->
+            <div class="row align-items-center pt-200">
+                <div class="col-12 col-md-6">
+                  <img src="img/grumpycat.jpg" style="height: auto;">
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 ml-md-auto">
+                        <h2>Grumpy Cat</h2>
+                        <span>(April 4, 2012 – May 14, 2019)<br></span>
+                        <br>
+                        <p>Tardar Sauce, nicknamed Grumpy Cat, was an American Internet celebrity cat. She was known for her permanently "grumpy" facial appearance, which was, probably, one of the most iconic memes of all time.</p>
+                        <a class="link" href="https://en.wikipedia.org/wiki/Grumpy_Cat">Know more</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- imagen der -->
+                <div class="row align-items-center pt-200">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <h2>Garfield</h2>
+                        <span>Created by Jim Davis.<br></span>
+                        <br>
+                        <p> b-lasagna, b-lasagna, Tea-series ain't nothing but a-</p>
+                        <a class="link" href="https://en.wikipedia.org/wiki/Garfield">Know more</a>
+                    </div>
+                    <div class="col-12 col-md-6 ml-md-auto">
+                        <img src="img/garfield.jpg">
+                    </div>
+                </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- img izq-->
+            <div class="row align-items-center pt-200">
+              <div class="col-12 col-md-6">
+                <img src="img/nyancat.gif" style="width: 90%;">
+              </div>
+              <div class="col-12 col-md-6 col-lg-5 ml-md-auto">
+                <h2>Nyan Cat</h2>
+                <span>nyan nyan nyan nyan nyan nyan nyan nyan<br></span>
+                <br>
+                <p>Cats? Yes.<br>Pop tarts? Absolutely.<br>Mix of them? YASS.<br>Hotel? Trivago.</p>
+                <a class="link" href="https://www.youtube.com/watch?v=QH2-TGUlwu4">Know more</a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+          <!-- imagen der -->
+            <div class="row align-items-center pt-200">
+                <div class="col-12 col-md-6 col-lg-5">
+                  <h2>The Cat in the Hat</h2>
+                  <span>furries...<br></span>
+                  <br>
+                  <p>Wild from the start to the end.<br>Really good tho?<br>Dunno, just watch it, laughs guaranteed.</p>
+                  <a class="link" href="https://en.wikipedia.org/wiki/The_Cat_in_the_Hat">Know more</a>
+                </div>
+                <div class="col-12 col-md-6 ml-md-auto">
+                  <img src="img/thecatinthehat.jpg">
+                </div>
+            </div> 
+            <br>
+            <br>
+            <br>
+            <!-- img izq-->
+            <div class="row align-items-center pt-200">
+              <div class="col-12 col-md-6">
+                <img src="img/elgatoconbotas.jpg">
+              </div>
+              <div class="col-12 col-md-6 col-lg-5 ml-md-auto">
+                <h2>Puss in Boots</h2>
+                <span>Shrek is life<br></span>
+                <br>
+                <p>He's just so purrr-fect.</p>
+                <a class="link" href="https://shrek.fandom.com/wiki/Puss_in_Boots">Know more</a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- imagen der -->
+            <div class="row align-items-center pt-200">
+              <div class="col-12 col-md-6 col-lg-5">
+                <h2>Cheshire</h2>
+                <span>By Lewis Caroll<br></span>
+                <br>
+                <p>RIDDLE: What kind of cat can grin?<br>
+                  ANSWER: A Catenary.<br><br> — David Day, Queen's Quarterly (2010)</p>
+                  <a class="link" href="https://en.wikipedia.org/wiki/Cheshire_Cat">Know more</a>
+              </div>
+              <div class="col-12 col-md-6 ml-md-auto">
+                <img src="img/cheshire.jpg">
+              </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <!-- img izq-->
+          <div class="row align-items-center pt-200">
+            <div class="col-12 col-md-6">
+              <img src="img/doraemon.jpg">
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 ml-md-auto">
+              <h2>Doraemon</h2>
+              <span>He a racooooon<br></span>
+              <br>
+              <p>In fact, some mice ate his ears.</p>
+              <a class="link" href="https://en.wikipedia.org/wiki/Doraemon">Know more</a>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <!-- imagen der -->
+          <div class="row align-items-center pt-200">
+            <div class="col-12 col-md-6 col-lg-5">
+              <h2>Hello Kitty</h2>
+              <span>Bye Dog<br></span>
+              <br>
+              <p>Did you know that her real name is Kitty White?</p>
+              <a class="link" href="https://web.archive.org/web/20110624000114/http://www.sanrio.co.jp/english/characters/detail/hellokitty/index.html">Know more</a>
+            </div>
+            <div class="col-12 col-md-6 ml-md-auto">
+              <img src="img/hellokitty.jpg"style="width: 80%;">
+            </div>
+          </div> 
+          <br>
+          <br>
+          <br>
+        </div>
+      </section>
+        <br>
+        <br>
+    </div>
+        <!--input sugestions-->
+      <form>
+        <input required='' type='text'>
+        <label alt='Leave your suggestions!' Suggestions='omg, really?!'></label>
+      </form>
+    <div class="align-items-center">
+        <span>Icon credits:</span>
+        <a class="nav-link waves-effect waves-light" href="https://www.instagram.com/pawsofpride/">
+          <img src="img/pawsofpride.png" style="width:28px;height:28px;">@pawsofpride
+        </a>
+        <br>
+        <br>
+    </div>
+    <marquee>Gatos  · ·  Gats  · ·  Cats  · ·  Chats  · ·  Koty  · ·  Katzen  · ·  ʻōpoki  · ·  γάτες  · ·  Katter  · · חתולים  · · گربه ها  · ·  고양이  · ·  ねこ  · ·  猫</marquee>
+</body>
+</html>
